@@ -56,16 +56,16 @@ footer a{margin:0 10px}
 <nav><div class="w"><b id="nm"></b><div><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></div></nav>
 <main id="app"></main>
 <script>
-/* ============ EDIT YOUR CONTENT HERE ============ */
+/* ============ CONTENT ============ */
 const C={
 name:"Prachi Devi",
 headline:"Business Analyst · Product & Process Analytics",
 tagline:"I turn ambiguous operational problems into specs, decision logic and dashboards that engineering builds against and leadership trusts.",
-email:"contact.prachidevi@gmail.com",           // CHECK: old site used prachigupta58000@gmail.com
-linkedin:"https://www.linkedin.com/in/prachidevi", // CHECK: old site used /in/itzprachigupta
+email:"contact.prachidevi@gmail.com",           
+linkedin:"https://www.linkedin.com/in/prachidevi", 
 github:"https://github.com/itsprachidevi",
-resume:"\Prachi_devi_Resume.pdf",     // ADD: link to your resume PDF (button hides while empty)
-photo:"\PrachiDevi.png",      // ADD: photo URL or a data: URI
+resume:"\Prachi_devi_Resume.pdf",     
+photo:"\PrachiDevi.png",      
 pillars:[
 ["Define","From stakeholder conversations to BRDs, functional specs, user stories and acceptance criteria. I gather requirements, map As-Is and To-Be processes, and sequence rollouts."],
 ["Build","I design the decision logic: risk-scoring models, auto-approval workflows and escalation frameworks. Then I work with engineering through UAT to ship them."],
@@ -79,7 +79,7 @@ work:[
 ["UDAAN","Airtel · Escalation framework","Aligned cross-circle stakeholders to design 30+ automated escalation workflows, with Power BI dashboards for real-time monitoring adopted NOC-wide.","Resolution delays down 25%"],
 ["Automation Adoption Dashboard","Airtel · Power BI","Built an operations dashboard giving leadership real-time visibility into automation adoption across circles.","Compliance up 20%"],
 ["Alarm Analytics","Airtel · SQL + Python","Analyzed 1,200+ NMS telecom alarms to cut false alarms, feeding a Netcool dashboard used daily by 50+ NOC members.","False alarms down 17% · 2 hrs saved per day"]],
-caseStudyNote:"", // ADD per project: a link, e.g. a sanitized case study, as a 5th item in each work entry
+caseStudyNote:"",
 jobs:[
 ["Jul 2024 – Present","Process Analyst – Assistant Manager","Bharti Airtel Limited · Network NOC Process & Capability",["<b>Platforms:</b> NERVE, ARC, CMS and UDAAN, as above, owned from requirements to rollout.","<b>UAT & delivery:</b> authored UAT observation sheets and leadership status trackers for the CMS Scheduler module, aligning engineering and operations teams.","<b>Recognition:</b> three Airtel Ace Awards (Roster; Auto Scheduler; Auto Assignment, Plan Validation & Impact Analysis) and a Collaboration & Influence Award (ARC)."]],
 ["Feb – Jul 2024","Graduate Engineer Trainee (Intern)","Bharti Airtel Limited",["Built a monitoring dashboard from scratch, analyzing 1,200+ NMS alarms with SQL and Python to reduce false alarms by 17%."]],
@@ -90,10 +90,25 @@ skills:[
 ["Tools","Jira|Confluence|ServiceNow|BMC Remedy|Visio|Figma|Git / GitHub"],
 ["AI Tools","Claude|Lovable|Emergent"],
 ["Certifications","Process Optimization & Operational Excellence (Mercury Solutions)|Microsoft Power BI (Maven Analytics)|Advanced Excel (Maven Analytics)|AI Primer (Infosys Springboard)"]],
-testimonial:null, // ADD: {text:"…", who:"Name", role:"Title, Company"}
-posts:[]          // ADD: [{title:"…", blurb:"…", url:"https://…"}]
+testimonials:[
+  {text:"Congratulations Prachi for the fantastic work on the ARC project! Your ownership, customer focus, and excellence have truly stood out. Great collaboration with the UACC and SharePoint teams and strong commitment to driving the project end to end!",
+   who:"Akash Sharma", role:"DGM - Lead Process Excellence, Bharti Airtel", date:"Sep 2026"},
+
+  {text:"Thank you for the excellent collaboration on the end-to-end change management automation. Your professionalism, timely coordination, and commitment to process excellence were instrumental in delivering a seamless and efficient automation outcome.",
+   who:"Surendranath Srinivasan", role:"Sr. Manager - SME Optics, Bharti Airtel", date:"Apr 2026"},
+
+  {text:"It has been great to see you step up this year with strong ownership and consistent execution across key initiatives like ARC and Change Automation. Your effective coordination, clarity in driving requirements, and collaborative approach have added immense value and contributed significantly to the success of these projects.",
+   who:"Akash Sharma", role:"DGM - Lead Process Excellence, Bharti Airtel", date:"Mar 2026"},
+
+  {text:"I would like to appreciate Prachi for her consistent support throughout the ARC project. She collaborated effectively with multiple teams to gather business requirements and coordinated with dependent teams to enable integrations with Remedy and ServiceNow. Her strong coordination and collaborative approach played a key role in the project’s success.",
+   who:"Karan Bajaj", role:"DGM - Engineering, Bharti Airtel", date:"Dec 2025"},
+
+  {text:"Your dedication and problem-solving mindset have been instrumental in the success of Project Udaan and the ongoing Change Catalogue. Thank you for consistently delivering on your promises and making a real impact. Your contributions truly elevate the entire team.",
+   who:"Jasvinder Kaur", role:"GM - Head Process Excellence, Bharti Airtel", date:"Sep 2025"}
+],
+posts:[]  // [{title:"…", blurb:"…", url:"https://…"}]  
 };
-/* ============ RENDERING (no need to edit) ============ */
+/* ============ RENDERING ============ */
 const $=s=>document.querySelector(s);
 const ph=t=>`<div class="ph">${t}</div>`;
 const link=(h,t)=>h?`<a href="${h}" target="_blank" rel="noopener">${t}</a>`:"";
@@ -109,7 +124,7 @@ ${C.photo?`<img src="${C.photo}" alt="${C.name}">`:`<div class="ph photo">Add yo
 <section id="work"><div class="w"><h2>Selected work</h2><div class="g3">${C.work.map(w=>`<div class="card"><small>${w[1]}</small><h3>${w[0]}</h3><p>${w[2]}</p><div class="m">${w[3]}</div>${w[4]?`<a class="l" href="${w[4]}" target="_blank" rel="noopener">Case study →</a>`:""}</div>`).join("")}</div></div></section>
 <section id="experience"><div class="w"><h2>Experience & education</h2>${C.jobs.map(j=>`<div class="job"><time>${j[0]}</time><div><h3>${j[1]}</h3><div>${j[2]}</div><ul>${j[3].map(b=>`<li>${b}</li>`).join("")}</ul></div></div>`).join("")}</div></section>
 <section id="skills"><div class="w"><h2>Skills & certifications</h2>${C.skills.map(s=>`<div class="sk"><h3>${s[0]}</h3>${s[1].split("|").map(x=>`<span class="chip">${x}</span>`).join("")}</div>`).join("")}</div></section>
-<section><div class="w"><h2>Kind words</h2>${C.testimonial?`<blockquote>“${C.testimonial.text}”</blockquote><p style="color:var(--mut)">${C.testimonial.who}, ${C.testimonial.role}</p>`:ph("Add a testimonial from a stakeholder or manager (set <code>testimonial</code> in the config)")}</div></section>
+<section><div class="w"><h2>Kind words</h2>${C.testimonials.length?C.testimonials.map(t=>`<blockquote>“${t.text}”</blockquote><p style="color:var(--mut);margin:8px 0 32px">${t.who}, ${t.role}${t.date?` · ${t.date}`:""}</p>`).join(""):ph("Add testimonials (set <code>testimonials</code> in the config)")}</div></section>
 <section id="contact"><div class="w"><h2>Get in touch</h2><p style="color:var(--mut);margin-top:-14px;margin-bottom:22px">Have a role or a project in mind? Let’s talk about it.</p>
 <form id="f"><input id="fn" placeholder="Name" required><input id="fe" type="email" placeholder="Email address" required><textarea id="fm" rows="5" placeholder="Message" required></textarea><div><button class="btn p" type="submit">Send</button></div></form></div></section>
 <footer><div>${link(C.linkedin,"LinkedIn")}${link(C.github,"GitHub")}${link("mailto:"+C.email,"Email")}</div><p>© ${new Date().getFullYear()} ${C.name}</p></footer>`;
@@ -117,4 +132,3 @@ $("#f").onsubmit=e=>{e.preventDefault();location.href=`mailto:${C.email}?subject
 </script></body></html>
 
 <!-- <section id="writing"><div class="w"><h2>Writing</h2>${C.posts.length?`<div class="g3">${C.posts.map(p=>`<div class="card"><h3>${p.title}</h3><p>${p.blurb}</p><a class="l" href="${p.url}" target="_blank" rel="noopener">Read more →</a></div>`).join("")}</div>`:ph("Add your articles or notes here (set <code>posts</code> in the config)")}</div></section> -->
- 
