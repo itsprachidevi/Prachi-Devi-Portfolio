@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Prachi Devi · Business & Product Analyst</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf7f2;--fg:#1d1b19;--mut:#6b655e;--card:#fff;--line:#e5ded3;--acc:#c4552d;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#151413;--fg:#f2eee8;--mut:#a39b90;--card:#1e1c1a;--line:#33302c;--acc:#e8845e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#151413;--fg:#f2eee8;--mut:#a39b90;--card:#1e1c1a;--line:#33302c;--acc:#e8845e;color-scheme:dark}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 Inter,system-ui,sans-serif}
+h1,h2,h3{font-family:Fraunces,Georgia,serif;font-weight:600;line-height:1.15;margin:0}
+a{color:inherit}
+.w{max-width:1000px;margin:0 auto;padding:0 22px}
+nav{position:sticky;top:0;background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .w{display:flex;justify-content:space-between;align-items:center;height:56px;gap:12px}
+nav b{font-family:Fraunces,serif;font-size:18px}
+nav div{display:flex;gap:18px;font-size:14px;overflow-x:auto}
+nav a{text-decoration:none;color:var(--mut);white-space:nowrap}nav a:hover{color:var(--acc)}
+section{padding:70px 0;border-bottom:1px solid var(--line)}
+h2{font-size:34px;margin-bottom:28px}
+.hero{padding:100px 0 80px;text-align:center}
+.hero h1{font-size:clamp(40px,8vw,68px)}
+.hero h3{font-family:Inter;font-weight:500;color:var(--acc);margin:14px 0 18px;font-size:20px}
+.hero p{max-width:620px;margin:0 auto 28px;font-size:19px;color:var(--mut)}
+.btn{display:inline-block;padding:12px 26px;border:1.5px solid var(--fg);border-radius:99px;text-decoration:none;font-weight:600;font-size:14px;letter-spacing:.06em;text-transform:uppercase;margin:4px;background:none;color:var(--fg);cursor:pointer;font-family:inherit}
+.btn.p{background:var(--fg);color:var(--bg)}.btn:hover{border-color:var(--acc);background:var(--acc);color:#fff}
+.g3{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px}
+.pil h3{font-size:26px;color:var(--acc);margin-bottom:8px}.pil p{margin:0;color:var(--mut)}
+.about{display:grid;grid-template-columns:minmax(0,320px) 1fr;gap:44px;align-items:start}
+@media(max-width:720px){.about{grid-template-columns:1fr}}
+.ph{border:2px dashed var(--line);border-radius:12px;color:var(--mut);font-size:14px;display:flex;align-items:center;justify-content:center;text-align:center;padding:18px;min-height:120px}
+.photo{aspect-ratio:4/5}
+.about img{width:100%;border-radius:12px;display:block}
+.about p{margin:0 0 16px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:16px;margin-top:26px}
+.stats div{border-top:2px solid var(--acc);padding-top:8px;color:var(--mut);font-size:13px}.stats b{display:block;font:600 30px Fraunces,serif;color:var(--fg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:22px}
+.card small{color:var(--acc);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:12px}
+.card h3{font-size:22px;margin:6px 0 8px}.card p{margin:0 0 10px;color:var(--mut);font-size:15px}
+.card .m{color:var(--fg);font-weight:600;font-size:14px}
+.card a.l{font-size:13px;color:var(--acc)}
+.job{display:grid;grid-template-columns:150px 1fr;gap:24px;margin-bottom:34px}
+@media(max-width:640px){.job{grid-template-columns:1fr;gap:4px}}
+.job time{color:var(--mut);font-size:14px}.job h3{font-size:22px}.job h3+div{color:var(--acc);margin-bottom:8px}
+.job ul{margin:0;padding-left:20px;color:var(--mut)}.job li{margin-bottom:6px}.job li b{color:var(--fg)}
+.sk{margin-bottom:18px}.sk h3{font:600 13px Inter;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:8px}
+.chip{display:inline-block;border:1px solid var(--line);background:var(--card);border-radius:99px;padding:4px 14px;margin:0 6px 8px 0;font-size:14px}
+blockquote{margin:0;font:italic 400 21px/1.55 Fraunces,serif}
+form{display:grid;gap:12px;max-width:560px}
+input,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:8px;background:var(--card);color:var(--fg);font:inherit;width:100%}
+footer{padding:36px 0;text-align:center;color:var(--mut);font-size:14px}
+footer a{margin:0 10px}
+</style></head><body>
+<nav><div class="w"><b id="nm"></b><div><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></div></nav>
+<main id="app"></main>
+<script>
+/* ============ EDIT YOUR CONTENT HERE ============ */
+const C={
+name:"Prachi Devi",
+headline:"Business Analyst · Product & Process Analytics",
+tagline:"I turn ambiguous operational problems into specs, decision logic and dashboards that engineering builds against and leadership trusts.",
+email:"contact.prachidevi@gmail.com",           // CHECK: old site used prachigupta58000@gmail.com
+linkedin:"https://www.linkedin.com/in/prachidevi", // CHECK: old site used /in/itzprachigupta
+github:"https://github.com/itsprachidevi",
+resume:"\Prachi_devi_Resume.pdf",     // ADD: link to your resume PDF (button hides while empty)
+photo:"\PrachiDevi.png",      // ADD: photo URL or a data: URI
+pillars:[
+["Define","From stakeholder conversations to BRDs, functional specs, user stories and acceptance criteria. I gather requirements, map As-Is and To-Be processes, and sequence rollouts."],
+["Build","I design the decision logic: risk-scoring models, auto-approval workflows and escalation frameworks. Then I work with engineering through UAT to ship them."],
+["Measure","SQL, Python and Power BI turn adoption, compliance and outage data into KPIs and live dashboards that show whether a product is working."]],
+about:["I’m a business and product analyst at Bharti Airtel with 2+ years of experience owning requirements and decision logic for the platforms that govern change across a national telecom network.","My work spans the full loop: understanding the operational problem, writing the spec, aligning stakeholders across 21 circles, validating with data, and measuring adoption after launch.","I hold a B.Tech in Computer Science & Engineering (CGPA 9.07/10) from Guru Nanak Dev Engineering College, Ludhiana, and I’m currently based in Gurugram, India."],
+stats:[["200","FTE enablement in Productivity Savings"],["15%","Reduction in Outages"],["5,000+","conflict detected per month"],["3","award cycles"],["3+","Dashboards Published"]],
+work:[
+["NERVE","Airtel · AI risk engine","Defined product requirements and decision logic for an AI-powered CRQ risk-assessment engine: a 6-factor risk score and 10+ conflict and deviation scenarios.","5,000+ cases flagged monthly · outages down 15%"],
+["ARC","Airtel · Governance platform","Authored the BRD and functional spec for a centralized CRQ governance and auto-approval engine, correlating ARC data with ServiceNow Access Requests.","Approval time ~20 → ~5 min · 7 FTE freed"],
+["CMS","Airtel · Change management suite","Own requirements and rollout sequencing for a 6-module suite: Roster, Scheduling, Auto Assignment, Plan Validation, Impact Analysis and Approvals.","5 modules live · 200 FTE enabled"],
+["UDAAN","Airtel · Escalation framework","Aligned cross-circle stakeholders to design 30+ automated escalation workflows, with Power BI dashboards for real-time monitoring adopted NOC-wide.","Resolution delays down 25%"],
+["Automation Adoption Dashboard","Airtel · Power BI","Built an operations dashboard giving leadership real-time visibility into automation adoption across circles.","Compliance up 20%"],
+["Alarm Analytics","Airtel · SQL + Python","Analyzed 1,200+ NMS telecom alarms to cut false alarms, feeding a Netcool dashboard used daily by 50+ NOC members.","False alarms down 17% · 2 hrs saved per day"]],
+caseStudyNote:"", // ADD per project: a link, e.g. a sanitized case study, as a 5th item in each work entry
+jobs:[
+["Jul 2024 – Present","Process Analyst – Assistant Manager","Bharti Airtel Limited · Network NOC Process & Capability",["<b>Platforms:</b> NERVE, ARC, CMS and UDAAN, as above, owned from requirements to rollout.","<b>UAT & delivery:</b> authored UAT observation sheets and leadership status trackers for the CMS Scheduler module, aligning engineering and operations teams.","<b>Recognition:</b> three Airtel Ace Awards (Roster; Auto Scheduler; Auto Assignment, Plan Validation & Impact Analysis) and a Collaboration & Influence Award (ARC)."]],
+["Feb – Jul 2024","Graduate Engineer Trainee (Intern)","Bharti Airtel Limited",["Built a monitoring dashboard from scratch, analyzing 1,200+ NMS alarms with SQL and Python to reduce false alarms by 17%."]],
+["2020 – 2024","B.Tech, Computer Science & Engineering","Guru Nanak Dev Engineering College, Ludhiana",["CGPA 9.07 / 10"]]],
+skills:[
+["Business Analysis","Requirements Gathering|BRD / FRD|Functional Specs|User Stories|Gap Analysis|As-Is / To-Be Mapping|UAT|Stakeholder Management|Product Backlog|Wireframing"],
+["Data & BI","SQL|Python (Pandas, NumPy)|Power BI (DAX)|Advanced Excel|KPI Design|Dashboarding"],
+["Tools","Jira|Confluence|ServiceNow|BMC Remedy|Visio|Figma|Git / GitHub"],
+["AI Tools","Claude|Lovable|Emergent"],
+["Certifications","Process Optimization & Operational Excellence (Mercury Solutions)|Microsoft Power BI (Maven Analytics)|Advanced Excel (Maven Analytics)|AI Primer (Infosys Springboard)"]],
+testimonial:null, // ADD: {text:"…", who:"Name", role:"Title, Company"}
+posts:[]          // ADD: [{title:"…", blurb:"…", url:"https://…"}]
+};
+/* ============ RENDERING (no need to edit) ============ */
+const $=s=>document.querySelector(s);
+const ph=t=>`<div class="ph">${t}</div>`;
+const link=(h,t)=>h?`<a href="${h}" target="_blank" rel="noopener">${t}</a>`:"";
+$("#nm").textContent=C.name;
+document.title=C.name+" · "+C.headline;
+$("#app").innerHTML=`
+<section class="hero" id="top"><div class="w"><h1>${C.name}</h1><h3>${C.headline}</h3><p>${C.tagline}</p>
+<a class="btn p" href="#contact">Get in touch</a>${C.resume?`<a class="btn" href="${C.resume}" target="_blank" rel="noopener">Resume</a>`:""}</div></section>
+<section><div class="w g3">${C.pillars.map(p=>`<div class="pil"><h3>${p[0]}</h3><p>${p[1]}</p></div>`).join("")}</div></section>
+<section id="about"><div class="w"><h2>About me</h2><div class="about">
+${C.photo?`<img src="${C.photo}" alt="${C.name}">`:`<div class="ph photo">Add your photo<br>(set <code>photo</code> in the config)</div>`}
+<div>${C.about.map(p=>`<p>${p}</p>`).join("")}<div class="stats">${C.stats.map(s=>`<div><b>${s[0]}</b>${s[1]}</div>`).join("")}</div></div></div></div></section>
+<section id="work"><div class="w"><h2>Selected work</h2><div class="g3">${C.work.map(w=>`<div class="card"><small>${w[1]}</small><h3>${w[0]}</h3><p>${w[2]}</p><div class="m">${w[3]}</div>${w[4]?`<a class="l" href="${w[4]}" target="_blank" rel="noopener">Case study →</a>`:""}</div>`).join("")}</div></div></section>
+<section id="experience"><div class="w"><h2>Experience & education</h2>${C.jobs.map(j=>`<div class="job"><time>${j[0]}</time><div><h3>${j[1]}</h3><div>${j[2]}</div><ul>${j[3].map(b=>`<li>${b}</li>`).join("")}</ul></div></div>`).join("")}</div></section>
+<section id="skills"><div class="w"><h2>Skills & certifications</h2>${C.skills.map(s=>`<div class="sk"><h3>${s[0]}</h3>${s[1].split("|").map(x=>`<span class="chip">${x}</span>`).join("")}</div>`).join("")}</div></section>
+<section><div class="w"><h2>Kind words</h2>${C.testimonial?`<blockquote>“${C.testimonial.text}”</blockquote><p style="color:var(--mut)">${C.testimonial.who}, ${C.testimonial.role}</p>`:ph("Add a testimonial from a stakeholder or manager (set <code>testimonial</code> in the config)")}</div></section>
+<section id="contact"><div class="w"><h2>Get in touch</h2><p style="color:var(--mut);margin-top:-14px;margin-bottom:22px">Have a role or a project in mind? Let’s talk about it.</p>
+<form id="f"><input id="fn" placeholder="Name" required><input id="fe" type="email" placeholder="Email address" required><textarea id="fm" rows="5" placeholder="Message" required></textarea><div><button class="btn p" type="submit">Send</button></div></form></div></section>
+<footer><div>${link(C.linkedin,"LinkedIn")}${link(C.github,"GitHub")}${link("mailto:"+C.email,"Email")}</div><p>© ${new Date().getFullYear()} ${C.name}</p></footer>`;
+$("#f").onsubmit=e=>{e.preventDefault();location.href=`mailto:${C.email}?subject=${encodeURIComponent("Portfolio enquiry from "+$("#fn").value)}&body=${encodeURIComponent($("#fm").value+"\n\n"+$("#fe").value)}`};
+</script></body></html>
+
+<!-- <section id="writing"><div class="w"><h2>Writing</h2>${C.posts.length?`<div class="g3">${C.posts.map(p=>`<div class="card"><h3>${p.title}</h3><p>${p.blurb}</p><a class="l" href="${p.url}" target="_blank" rel="noopener">Read more →</a></div>`).join("")}</div>`:ph("Add your articles or notes here (set <code>posts</code> in the config)")}</div></section> -->
+ 
