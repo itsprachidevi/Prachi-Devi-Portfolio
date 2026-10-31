@@ -53,7 +53,7 @@ input,textarea{padding:12px 14px;border:1px solid var(--line);border-radius:8px;
 footer{padding:36px 0;text-align:center;color:var(--mut);font-size:14px}
 footer a{margin:0 10px}
 </style></head><body>
-<nav><div class="w"><b id="nm"></b><div><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#writing">Writing</a><a href="#contact">Contact</a></div></div></nav>
+<nav><div class="w"><b id="nm"></b><div><a href="#about">About</a><a href="#work">Work</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#testimonials">Testimonials</a><a href="#contact">Contact</a></div></div></nav>
 <main id="app"></main>
 <script>
 /* ============ CONTENT ============ */
@@ -124,7 +124,7 @@ ${C.photo?`<img src="${C.photo}" alt="${C.name}">`:`<div class="ph photo">Add yo
 <section id="work"><div class="w"><h2>Selected work</h2><div class="g3">${C.work.map(w=>`<div class="card"><small>${w[1]}</small><h3>${w[0]}</h3><p>${w[2]}</p><div class="m">${w[3]}</div>${w[4]?`<a class="l" href="${w[4]}" target="_blank" rel="noopener">Case study →</a>`:""}</div>`).join("")}</div></div></section>
 <section id="experience"><div class="w"><h2>Experience & education</h2>${C.jobs.map(j=>`<div class="job"><time>${j[0]}</time><div><h3>${j[1]}</h3><div>${j[2]}</div><ul>${j[3].map(b=>`<li>${b}</li>`).join("")}</ul></div></div>`).join("")}</div></section>
 <section id="skills"><div class="w"><h2>Skills & certifications</h2>${C.skills.map(s=>`<div class="sk"><h3>${s[0]}</h3>${s[1].split("|").map(x=>`<span class="chip">${x}</span>`).join("")}</div>`).join("")}</div></section>
-<section><div class="w"><h2>Kind words</h2>${C.testimonials.length?C.testimonials.map(t=>`<blockquote>“${t.text}”</blockquote><p style="color:var(--mut);margin:8px 0 32px">${t.who}, ${t.role}${t.date?` · ${t.date}`:""}</p>`).join(""):ph("Add testimonials (set <code>testimonials</code> in the config)")}</div></section>
+<section id="testimonials"><div class="w"><h2>Kind words</h2>${C.testimonials.length?C.testimonials.map(t=>`<blockquote>“${t.text}”</blockquote><p style="color:var(--mut);margin:8px 0 32px">${t.who}, ${t.role}${t.date?` · ${t.date}`:""}</p>`).join(""):ph("Add testimonials (set <code>testimonials</code> in the config)")}</div></section>
 <section id="contact"><div class="w"><h2>Get in touch</h2><p style="color:var(--mut);margin-top:-14px;margin-bottom:22px">Have a role or a project in mind? Let’s talk about it.</p>
 <form id="f"><input id="fn" placeholder="Name" required><input id="fe" type="email" placeholder="Email address" required><textarea id="fm" rows="5" placeholder="Message" required></textarea><div><button class="btn p" type="submit">Send</button></div></form></div></section>
 <footer><div>${link(C.linkedin,"LinkedIn")}${link(C.github,"GitHub")}${link("mailto:"+C.email,"Email")}</div><p>© ${new Date().getFullYear()} ${C.name}</p></footer>`;
